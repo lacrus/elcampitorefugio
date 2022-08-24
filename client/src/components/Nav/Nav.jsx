@@ -1,8 +1,15 @@
 import React from "react";
+import { FaBars } from 'react-icons/fa';
 import { NavLink } from "react-router-dom";
 import logo from './../../assets/img/logo.svg';
 
 export default function Nav() {
+  
+  function handleNavMenu() {
+    let links = document.getElementById("myLinks");
+    links.classList.contains('hidden') ? links.classList.remove('hidden') : links.classList.add('hidden');
+  }
+
   return (
     <header>
       <NavLink to='/'><img src={logo} alt="Logo del campito" height="auto" width="55%" /></NavLink>
@@ -21,7 +28,7 @@ export default function Nav() {
                 <li> <NavLink to='/contact'> Contactanos</NavLink></li>
             </ul>
         </nav>
-        <a href="javascript:void(0);" onclick="myFunction()"> <i class="fas fa-bars appear fa-4xs"></i></a>
+        <i onClick={handleNavMenu}> <FaBars color="#000" size='20px' class="fas fa-bars appear fa-4xs"/></i>
     </header>
   );
 }

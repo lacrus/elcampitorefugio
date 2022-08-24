@@ -2,6 +2,7 @@ import { NavLink } from 'react-router-dom';
 import image from './../../assets/img/img-principal.jpg';
 
 export default function Home() {
+
   return (
     <main>
         <section>
@@ -16,13 +17,13 @@ export default function Home() {
         </section>
         <section class="box-container">
             <div class="box background-grey">
-                <NavLink to='/volunteer'><h3>Veterinaria y Unidad de Cuidados Intensivos</h3></NavLink>
+                <NavLink to='/'><h3>Veterinaria y Unidad de Cuidados Intensivos</h3></NavLink>
             </div>
             <div class="box background-orange">
                 <NavLink to='/'><h3>Comportamiento y Sociabilización</h3></NavLink>
             </div>
             <div class="box background-purple">
-                <NavLink to='/'><h3>Donaciones y Padrinazgos</h3></NavLink>
+                <NavLink to='/donate'><h3>Donaciones y Padrinazgos</h3></NavLink>
             </div>
             <div class="box background-light-blue">
                 <NavLink to='/volunteer'><h3>Quiero ser Voluntario</h3></NavLink>
