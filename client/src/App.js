@@ -10,6 +10,12 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<Home />} />
+        <Route path="/collaborate" element={<Home />} />
+        <Route path="/adopt" element={<Home />} />
+        <Route path="/volunteer" element={<Home />} />
+        <Route path="/project" element={<Home />} />
+        <Route path="/contact" element={<Home />} />
       </Routes>
       <Footer />
     </BrowserRouter>

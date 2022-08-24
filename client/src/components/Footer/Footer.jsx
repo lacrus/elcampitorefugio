@@ -1,84 +1,36 @@
-import s from "./Footer.module.css";
-import {
-  BsWhatsapp,
-  BsFacebook,
-  BsInstagram,
-  BsYoutube,
-  BsTwitter,
-} from "react-icons/bs";
-import { GoLocation } from "react-icons/go";
-import { AiOutlineMail } from "react-icons/ai";
-
-import imagen from "../../recursos/imagenes/perroSinBordes.png";
+import logo from './../../assets/img/logo-cara.svg';
+import { BsWhatsapp, BsEnvelope, BsInstagram, BsFacebook, BsYoutube, BsTwitter } from 'react-icons/bs';
+import { IoLocation } from 'react-icons/io5';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
-    <footer className={s.contenedor}>
-      <div className={s.contenedorImagen}>
-        <img src={imagen} className={s.imagen} alt="cara perro" />
-      </div>
-      <div className={s.contactos}>
-        <a
-          href=""
-          target="_blank"
-          rel="noopener noreferrer"
-          className={s.contacto}
-        >
-          <BsWhatsapp color="#ff9900" className={s.iconos} />
-          <div>+54 9 11 12345678</div>
-        </a>
-        <a
-          href="mailto:refugioelcampito@gmail.com?Subject=Contacto%20via%20pagina%20web"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={s.contacto}
-        >
-          <AiOutlineMail color="#ff9900" className={s.iconos} />
-          <div>mail@gmail.com</div>
-        </a>
-        <a
-          href="https://www.google.com/maps/dir//refugio+el+campito/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x95bcd524123fd69d:0xc8636b72951eb39b?sa=X&ved=2ahUKEwjXiNm96935AhU0uZUCHb2ACrgQ9Rd6BAhgEAU"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={s.contacto}
-        >
-          <GoLocation color="#ff9900" className={s.iconos} />
-          <div>localidad</div>
-        </a>
-      </div>
-      <div className={s.contenedorRedes}>
-        <div>¡Seguinos!</div>
-        <div className={s.redes}>
-          <a
-            href="https://www.google.com/?hl=es"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <BsInstagram color="#ff9900" size="20px" />
-          </a>
-          <a
-            href="https://www.google.com/?hl=es"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <BsFacebook color="#ff9900" size="20px" />
-          </a>
-          <a
-            href="https://www.google.com/?hl=es"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <BsYoutube color="#ff9900" size="20px" />
-          </a>
-          <a
-            href="https://www.google.com/?hl=es"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <BsTwitter color="#ff9900" size="20px" />
-          </a>
+    <footer>
+    <div class="footer-container">
+        <img src={logo} width="15%" height="auto" alt="Logo carita de perro del campito" />
+        <div>
+            <div class="info-container">
+                <i><BsWhatsapp /></i>
+                <p>+54 9 11 2537 1316</p>
+            </div>
+            <div class="info-container">
+                <i><BsEnvelope /></i>
+                <p>versiagregamosmail@mail.com.ar</p>
+            </div>
+            <div class="info-container">
+                <i><IoLocation /></i>
+                <p>Estamos en Esteban Echeverría, Argentina</p>
+            </div>
         </div>
-      </div>
-    </footer>
+        <div class="redes">
+            <h4>¡Seguinos!</h4>
+            <a href="https://instagram.com" target="_blank" rel="noreferrer"><i><BsInstagram /></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noreferrer"><i><BsFacebook /></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noreferrer"><i><BsYoutube /></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noreferrer"><i><BsTwitter /></i></a>
+        </div>
+    </div>
+    <p class="derechos">El Campito Refugio. Todos los derechos reservados.</p>
+</footer>
   );
 }
