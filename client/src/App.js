@@ -1,14 +1,14 @@
-import "./App.css";
+// import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import About from './components/About/About';
-import Contact from "./components/Contact/Contact";
-import Collaborate from './components/Collaborate/Collaborate';
-import Donations from './components/Donations/Donations';
-import Footer from "./components/Footer/Footer";
-import Home from "./components/Home/Home.jsx";
-import Nav from "./components/Nav/Nav.jsx";
-import Project from "./components/Project/Project";
-import Volunteer from "./components/Volunteer/Volunteer";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Collaborate from "./components/Collaborate";
+import Donations from "./components/Donations";
+import Footer from "./components/Footer";
+import Home from "./components/Home.jsx";
+import Nav from "./components/Nav.jsx";
+import Project from "./components/Project";
+import Volunteer from "./components/Volunteer";
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
         <Route path="/volunteer" element={<Volunteer />} />
         <Route path="/project" element={<Project />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path='/donate' element={<Donations />} />
+        <Route path="/donate" element={<Donations />} />
       </Routes>
       <Footer />
     </BrowserRouter>

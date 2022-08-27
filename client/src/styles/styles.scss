@@ -1,0 +1,195 @@
+@import "./scss/colors";
+@import "./scss/sizes";
+@import "./scss/mixins";
+
+@font-face {
+  font-family: "Trashhand";
+  src: url("../assets/fonts/TrashHand.TTF");
+}
+
+@font-face {
+  font-family: "Seravek";
+  src: url("../assets/fonts/Seravek.ttf");
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: "Seravek", "sans-serif";
+  font-size: $paragraph-size;
+  color: $grey;
+  font-weight: 300;
+}
+
+.parent {
+  @include parent(row);
+}
+
+.parent-column {
+  @include parent(column);
+}
+
+.parent-grid-5 {
+  // @include parent-grid();
+  @include align(initial, center, center);
+  grid-template-columns: 29% 17% 17% 17% 17%;
+  gap: 10px;
+  padding: 10px 0;
+}
+.parent-grid-2 {
+  // @include parent-grid();
+  grid-template-columns: auto auto;
+  gap: 10px;
+}
+
+.parent-grid-2-paypal {
+  // @include parent-grid();
+  @include align(initial, center, center);
+  grid-template-columns: 29% 70.5%;
+  column-gap: 10px;
+  padding: 10px 0;
+  .medio-de-pago {
+    padding: 0px;
+  }
+}
+
+h1 {
+  color: $light-blue;
+  font-size: $h1-size;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: $light-blue;
+  font-family: "Trashhand";
+  font-size: $h2-size;
+}
+
+h3 {
+  color: $white;
+  font-size: $h3-size;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: $h4-size;
+  font-weight: 900;
+}
+
+.hidden {
+  display: flex !important;
+}
+
+.appear {
+  display: none !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+//------ HEADER --------//
+
+@import "./components/nav";
+
+//------ MAIN-INDEX --------//
+
+@import "./components/home";
+
+//------ FOOTER --------//
+
+@import "./components/footer";
+
+// ------------ COLABORAR ------------//
+
+@import "./components/colaborar";
+
+//------ MEDIA QUERIES -----//
+
+@media (max-width: 1085px) {
+  body {
+    font-size: $h3-small-size;
+  }
+  .parent-grid-2,
+  .parent-grid-2-paypal,
+  .parent-grid-5 {
+    grid-template-columns: none;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 850px) {
+  .box {
+    width: 50%;
+  }
+  .parent-grid-2,
+  .parent-grid-2-paypal,
+  .parent-grid-5 {
+    grid-template-columns: none;
+    gap: 10px;
+  }
+  .debito-automatico {
+    max-height: 400px;
+  }
+}
+
+@media (max-width: 700px) {
+  .hidden {
+    display: none !important;
+  }
+  .appear {
+    display: inline !important;
+  }
+  .fa-bars {
+    margin-right: 30px;
+  }
+  ul {
+    display: block !important;
+    position: absolute;
+    background: $orange;
+    width: 100%;
+    top: 80px;
+    right: 0px;
+    font-size: 1.3em;
+    li {
+      border-bottom: 1px solid $white;
+    }
+    a {
+      color: $white !important;
+      margin-top: 20px !important;
+    }
+    a:hover {
+      color: $grey !important;
+    }
+    li:hover {
+      background-color: $light-orange;
+    }
+  }
+  .content {
+    width: 90%;
+  }
+  .footer-container {
+    @include parent(column);
+    @include align(space-around, flex-start, left);
+    margin-left: 20px;
+    img {
+      display: none;
+    }
+  }
+
+  .redes {
+    margin-top: 40px;
+  }
+
+  .home article {
+    @include parent(column);
+    img {
+      width: 100%;
+    }
+  }
+}

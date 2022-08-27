@@ -1,0 +1,55 @@
+article {
+  @include parent(row);
+  @include align(space-around, center, left);
+  p {
+    font-size: $paragraph-size-big;
+  }
+}
+
+article div {
+  padding: 50px;
+}
+
+.content {
+  width: 50%;
+}
+
+.box-container {
+  @include parent(row);
+  flex-wrap: wrap;
+  flex-flow: flex wrap;
+}
+
+.box {
+  height: 250px;
+  width: 25%;
+  padding: 50px;
+}
+
+.background-grey {
+  background-color: $grey;
+}
+
+.background-orange {
+  background-color: $orange;
+}
+
+.background-purple {
+  background-color: $purple;
+}
+
+.background-light-blue {
+  background-color: $light-blue;
+}
+
+.background-green {
+  background-color: $green;
+}
+
+.background-pink {
+  background-color: $pink;
+}
+
+.background-light-orange {
+  background-color: $light-orange;
+}
