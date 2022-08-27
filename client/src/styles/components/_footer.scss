@@ -1,0 +1,33 @@
+footer {
+  @include parent(column);
+  padding: 50px 20px 10px 20px;
+  @include align(space-around, space-around, center);
+}
+
+.footer-container {
+  @include parent(row);
+  @include align(space-around, center, left);
+}
+
+.derechos {
+  margin-top: 50px;
+}
+
+.info-container {
+  @include parent(row);
+  @include align(left, center, center);
+  p {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+}
+
+i {
+  color: $orange;
+  font-size: $icon-size;
+  margin-top: 20px;
+}
+
+.redes i {
+  margin-right: 20px;
+}
