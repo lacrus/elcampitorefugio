@@ -17,9 +17,9 @@ export default function Nav() {
             <ul class="hidden" id="myLinks">
                 <li> <NavLink to='/about'> Nosotros</NavLink> </li>
                 <li class="hidden">|</li>
-                <li> <NavLink to='/collaborate'> Colaborá</NavLink> </li>
+                <li> <NavLink to='/collaborate'> Colabor&aacute;</NavLink> </li>
                 <li class="hidden">|</li>
-                <li> <a href='https://adoptauncamperito.com.ar/' target="_blank" rel="noreferrer"> Adoptá</a></li>
+                <li> <a href='https://adoptauncamperito.com.ar/' target="_blank" rel="noreferrer"> Adopt&aacute;</a></li>
                 <li class="hidden">|</li>
                 <li> <NavLink to='/volunteer'> Voluntariado</NavLink></li>
                 <li class="hidden">|</li>

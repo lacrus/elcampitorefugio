@@ -13,3 +13,10 @@
     text-align: $text;
 }
 
+@mixin parent-grid () {
+    display: grid;
+}
+
+@mixin border-radius ($radius) {
+    border-radius: $radius;
+}
