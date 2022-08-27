@@ -10,7 +10,7 @@ export default function Home() {
                 <div class="content">
                     <h1>El campito Refugio</h1>
                     <h2>VALE LA PENA INVOLUCRARSE</h2>
-                    <p>Acá va una pequeña bajada lorem ipsum lorem ipsum.</p>
+                    <p>Ac&aacute; va una pequeña bajada lorem ipsum lorem ipsum.</p>
                 </div>
                 <img src={image} alt="Perro con humano" height="auto" width="50%" />
             </article>
@@ -20,7 +20,7 @@ export default function Home() {
                 <NavLink to='/'><h3>Veterinaria y Unidad de Cuidados Intensivos</h3></NavLink>
             </div>
             <div class="box background-orange">
-                <NavLink to='/'><h3>Comportamiento y Sociabilización</h3></NavLink>
+                <NavLink to='/'><h3>Comportamiento y Sociabilizaci&oacute;n</h3></NavLink>
             </div>
             <div class="box background-purple">
                 <NavLink to='/donate'><h3>Donaciones y Padrinazgos</h3></NavLink>
@@ -38,7 +38,7 @@ export default function Home() {
                 <NavLink to='/'><h3>Visitas</h3></NavLink>
             </div>
             <div class="box background-orange">
-                <NavLink to='/contact'><h3>Comunicación y Redes Sociales</h3></NavLink>
+                <NavLink to='/contact'><h3>Comunicaci&oacute;n y Redes Sociales</h3></NavLink>
             </div>
         </section>
     </main>

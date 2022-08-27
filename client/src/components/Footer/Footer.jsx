@@ -19,7 +19,7 @@ export default function Footer() {
             </div>
             <div class="info-container">
                 <i><IoLocation /></i>
-                <p>Estamos en Esteban Echeverría, Argentina</p>
+                <p>Estamos en Esteban Echeverr&iacute;a, Argentina</p>
             </div>
         </div>
         <div class="redes">
