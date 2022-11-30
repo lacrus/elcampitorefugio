@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/0c08d73767.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Campito Refugio</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="assets/img/logo.svg" alt="Logo del campito" height="auto" width="55%"></a>
+        <nav>
+            <ul class="hidden" id="myLinks">
+                <li> <a href="nosotros.html"> Nosotros</a> </li>
+                <li class="hidden">|</li>
+                <li> <a href="colaborar.html"> Colabor&aacute;</a> </li>
+                <li class="hidden">|</li>
+                <li> <a href="adopta.html"> Adopt&aacute;</a> </li>
+                <li class="hidden">|</li>
+                <li> <a class="pagina-actual" href="voluntarios.html"> Voluntariado</a> </li>
+                <li class="hidden">|</li>
+                <li> <a href="proyectos.html"> Proyectos</a> </li>
+                <li class="hidden">|</li>
+                <li> <a href="contactanos.html"> Contactanos</a> </li>
+            </ul>
+        </nav>
+        <a href="javascript:void(0);" onclick="myFunction()"> <i class="fas fa-bars appear fa-4xs"></i></a>
+    </header>
+    <main class="voluntarios parent-column">
+        <div class="parent">
+            <section>
+                <h2>¡QUIERO SER VOLUNTARIO!</h2>
+                <p><span>¡En El Campito hay mucho por hacer!</span></p>
+                <p>Para que puedas integrarte hemos creado un espacio formativo permanente que nos ayude a potenciar la participación real y efectiva de aquellos que deseen dejar de ser visitantes para convertirse en voluntarios de nuestra ONG.</p>
+                <p>Todos los años El Campito abre la inscripción para reclutar voluntarios que posean un real compromiso para trabajar en las distintas áreas de nuestro refugio: proveyendo compañía, estímulo y ejercicio a nuestros Camperitos, brindando su trabajo en caniles, enfermería, página web, redes sociales, foto/video, colectas, reeducación y sociabilización, evaluando adoptantes, efectuando traslados y rescates, trabajando en jornadas y asistiendo a colegios para concientizar, dando la bienvenida y asistiendo a nuestros visitantes.</p>
+                <h3>¡Vos podés ser uno de ellos!</h3>
+                <p>Deberemos consensuar con cada voluntario su compromiso inicial, y establecer acuerdos acerca de su disposición temporal, responsabilidades y tareas sin dejar de exigir su cumplimiento.</p>
+                <p>No todos los que se anoten alcanzarán la categoría de voluntario, pues se elegirán para tareas específicas y la cantidad de los mismos será determinada por la naturaleza de las tareas a desarrollar. Les pedimos que piensen muy cuidadosamente acerca de la posibilidad de dar su tiempo antes de enviarnos su solicitud.</p>
+                <p>Ser voluntario te permitirá:</p>
+                <ul>
+                    <li>Desarrollar las habilidades existentes y obtener nuevos conocimientos.</li>
+                    <li>Conocer gente nueva.</li>
+                    <li>Saber más sobre los que hacer y ser parte de un equipo.</li>
+                    <li>Divertirte.</li>
+                    <li>Hacer algo a la vez desafiante y muy gratificante.</li>
+                    <li>Pasar tiempo de calidad con nuestros camperitos.</li>
+                </ul>  
+            </section>
+            <section class="center section-img">
+                <img src="assets/img/img-adopta.jpg" alt="Dos perros esperando ser adoptados" width="60%" height="auto">
+            </section>
+        </div>
+        <section class="center section-button">
+            <p><span>Para anotarte, escribinos un mail contándonos sobre vos a:</span></p>
+            <button>institucional@versiusamosestemail</button>
+            <p><span>¡Te esperamos!</span></p>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <img src="assets/img/logo-cara.svg" width="15%" height="auto" alt="Logo carita de perro del campito">
+            <div>
+                <div class="info-container">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <p>+54 9 11 2537 1316</p>
+                </div>
+                <div class="info-container">
+                    <i class="fa-regular fa-envelope"></i>
+                    <p>versiagregamosmail@mail.com.ar</p>
+                </div>
+                <div class="info-container">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Estamos en Esteban Echeverr&iacute;a, Argentina</p>
+                </div>
+            </div>
+            <div class="redes">
+                <h4>¡Seguinos!</h4>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+        </div>
+        <p class="derechos">El Campito Refugio. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.classList.contains('hidden')) {
+                x.classList.remove('hidden');
+            } else {
+                x.classList.add('hidden');
+            }
+        }
+    </script>
+</body>
+
+</html>

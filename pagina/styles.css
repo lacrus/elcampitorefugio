@@ -200,6 +200,10 @@ nav a:hover {
   text-decoration: none;
 }
 
+.pagina-actual {
+  color: #E48125;
+}
+
 article {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -345,8 +349,26 @@ i {
   margin-right: 20px;
 }
 
-.colaborar {
+main {
   padding: 50px;
+}
+
+.home {
+  padding: 0 !important;
+}
+
+.center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.margin-top {
+  margin-top: 20px;
 }
 
 .colaborar section {
@@ -485,6 +507,71 @@ input {
   height: -webkit-fill-available;
 }
 
+.nosotros h2, .nosotros h3, .nosotros li::marker {
+  color: #E48125;
+}
+
+.nosotros h2, .nosotros h3 {
+  margin-bottom: 20px;
+}
+
+.nosotros h3 {
+  margin-bottom: 10px;
+}
+
+.nosotros section {
+  width: 70%;
+}
+
+.nosotros section img {
+  max-height: 800px;
+}
+
+.adopta h2, .adopta li::marker {
+  color: #F9C0C1;
+}
+
+.adopta h2, .adopta p, .adopta ul {
+  margin-bottom: 20px;
+}
+
+.adopta section {
+  width: 70%;
+}
+
+.adopta button {
+  background-color: #F9C0C1;
+}
+
+.section-button {
+  width: 100% !important;
+  margin-top: 40px;
+}
+
+.section-button button {
+  width: auto;
+  padding: 20px;
+  min-height: 0;
+  height: 75px;
+  margin-top: 20px;
+}
+
+.voluntarios h2, h3, .voluntarios li::marker {
+  color: #4FA7C1;
+}
+
+.voluntarios section {
+  width: 100%;
+}
+
+.voluntarios p, h3, .voluntarios ul, .voluntarios h2 {
+  margin-top: 20px;
+}
+
+.voluntarios button {
+  background-color: #4FA7C1;
+}
+
 @media (max-width: 1085px) {
   body {
     font-size: 1em;
@@ -508,6 +595,12 @@ input {
   .debito-automatico {
     max-height: 400px;
   }
+  .nosotros .section-img, .adopta .section-img {
+    display: none;
+  }
+  .nosotros section, .adopta section {
+    width: 100%;
+  }
 }
 
 @media (max-width: 700px) {
@@ -520,7 +613,7 @@ input {
   .fa-bars {
     margin-right: 30px;
   }
-  ul {
+  nav ul {
     display: block !important;
     position: absolute;
     background: #E48125;
@@ -529,17 +622,17 @@ input {
     right: 0px;
     font-size: 1.3em;
   }
-  ul li {
+  nav ul li {
     border-bottom: 1px solid #FFFFFF;
   }
-  ul a {
+  nav ul a {
     color: #FFFFFF !important;
     margin-top: 20px !important;
   }
-  ul a:hover {
+  nav ul a:hover {
     color: #444445 !important;
   }
-  ul li:hover {
+  nav ul li:hover {
     background-color: #FCA24F;
   }
   .content {

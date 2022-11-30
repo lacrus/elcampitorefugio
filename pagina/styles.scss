@@ -129,6 +129,10 @@ nav a:hover {
     text-decoration: none;
 }
 
+.pagina-actual {
+    color: $orange;
+}
+
 //------ MAIN-INDEX --------//
 
 article {
@@ -223,11 +227,25 @@ i {
     margin-right: 20px;
 }
 
-// ------------ COLABORAR ------------// 
-
-.colaborar {
+main {
     padding: 50px;
 }
+
+.home {
+    padding: 0 !important;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.margin-top {
+    margin-top: 20px;
+}
+
+// ------------ COLABORAR ------------// 
 
 .colaborar section {
     margin-bottom: 20px;
@@ -236,8 +254,6 @@ i {
 .colaborar h2 {
     color: $green;
 }
-
-
 
 span {
     font-weight: bold;
@@ -347,6 +363,74 @@ input {
     height: -webkit-fill-available;
 }
 
+
+// ------------ NOSOTROS ------------// 
+
+.nosotros h2, .nosotros h3, .nosotros li::marker{
+    color: $orange;
+}
+
+.nosotros h2, .nosotros h3  {
+    margin-bottom: 20px;
+}
+
+.nosotros h3 {
+    margin-bottom: 10px;
+}
+
+.nosotros section {
+    width: 70%;
+    img {
+        max-height: 800px;
+    }
+}
+
+// ------------ ADOPTA ------------// 
+.adopta h2, .adopta li::marker {
+    color: $pink;
+}
+
+.adopta h2, .adopta p, .adopta ul  {
+    margin-bottom: 20px;
+}
+
+.adopta section {
+    width: 70%;
+}
+
+.adopta button {
+    background-color: $pink;
+}
+
+.section-button {
+    width: 100% !important;
+    margin-top: 40px;
+    button {
+        width: auto;
+        padding: 20px;
+        min-height: 0;
+        height: 75px;
+        margin-top: 20px;
+    }
+}
+
+// ------------ ADOPTA ------------// 
+.voluntarios h2, h3, .voluntarios li::marker {
+    color: $light-blue;
+}
+
+.voluntarios section {
+    width: 100%;
+}
+
+.voluntarios p, h3, .voluntarios ul, .voluntarios h2  {
+    margin-top: 20px;
+}
+
+.voluntarios button {
+    background-color: $light-blue;
+}
+
 //------ MEDIA QUERIES -----//
 
 @media (max-width: 1085px) {
@@ -370,6 +454,12 @@ input {
     .debito-automatico {
         max-height: 400px;
     }
+    .nosotros .section-img, .adopta .section-img  {
+        display: none;
+    }
+    .nosotros section, .adopta section {
+        width: 100%;
+    }
   }
   
 @media (max-width: 700px) {
@@ -382,7 +472,7 @@ input {
     .fa-bars {
         margin-right: 30px;
     }
-    ul {
+    nav ul {
         display: block !important;
         position: absolute;
         background: $orange;
@@ -427,7 +517,3 @@ input {
         }
     }
 }
-
-
-
-
