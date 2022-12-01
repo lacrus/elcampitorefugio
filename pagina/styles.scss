@@ -414,8 +414,8 @@ input {
     }
 }
 
-// ------------ ADOPTA ------------// 
-.voluntarios h2, h3, .voluntarios li::marker {
+// ------------ VOLUNTARIOS ------------// 
+.voluntarios h2, .voluntarios h3, .voluntarios li::marker {
     color: $light-blue;
 }
 
@@ -423,13 +423,49 @@ input {
     width: 100%;
 }
 
-.voluntarios p, h3, .voluntarios ul, .voluntarios h2  {
+.voluntarios p, .voluntarios h3, .voluntarios ul, .voluntarios h2  {
     margin-top: 20px;
 }
 
 .voluntarios button {
     background-color: $light-blue;
 }
+
+.voluntarios .box {
+    padding: 0px !important;
+    height: 300px;
+}
+
+.voluntarios .box-container {
+    margin-top: 40px;
+}
+
+// ------------ ESCOLAR ------------// 
+.escolar h2, .escolar h3, .escolar li::marker {
+    color: $green;
+}
+
+.escolar section {
+    width: 100%;
+}
+
+.escolar p, .escolar h3, .escolar ul, .escolar h2  {
+    margin-top: 20px;
+}
+
+.escolar button {
+    background-color: $green;
+}
+
+.escolar .box {
+    padding: 0px !important;
+    height: 300px;
+}
+
+.escolar .box-container {
+    margin-top: 40px;
+}
+
 
 //------ MEDIA QUERIES -----//
 

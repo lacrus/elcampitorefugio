@@ -556,7 +556,7 @@ input {
   margin-top: 20px;
 }
 
-.voluntarios h2, h3, .voluntarios li::marker {
+.voluntarios h2, .voluntarios h3, .voluntarios li::marker {
   color: #4FA7C1;
 }
 
@@ -564,12 +564,46 @@ input {
   width: 100%;
 }
 
-.voluntarios p, h3, .voluntarios ul, .voluntarios h2 {
+.voluntarios p, .voluntarios h3, .voluntarios ul, .voluntarios h2 {
   margin-top: 20px;
 }
 
 .voluntarios button {
   background-color: #4FA7C1;
+}
+
+.voluntarios .box {
+  padding: 0px !important;
+  height: 300px;
+}
+
+.voluntarios .box-container {
+  margin-top: 40px;
+}
+
+.escolar h2, .escolar h3, .escolar li::marker {
+  color: #55BA68;
+}
+
+.escolar section {
+  width: 100%;
+}
+
+.escolar p, .escolar h3, .escolar ul, .escolar h2 {
+  margin-top: 20px;
+}
+
+.escolar button {
+  background-color: #55BA68;
+}
+
+.escolar .box {
+  padding: 0px !important;
+  height: 300px;
+}
+
+.escolar .box-container {
+  margin-top: 40px;
 }
 
 @media (max-width: 1085px) {
