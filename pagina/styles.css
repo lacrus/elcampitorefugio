@@ -606,6 +606,31 @@ input {
   margin-top: 40px;
 }
 
+.visitas h2, .visitas a {
+  color: #E48125 !important;
+}
+
+.visitas section {
+  width: 100%;
+}
+
+.visitas p, .visitas h2 {
+  margin-top: 20px;
+}
+
+.visitas .transporte {
+  width: 30%;
+  padding: 20px;
+}
+
+.visitas a {
+  font-weight: bold;
+}
+
+.visitas a:hover {
+  color: #FCA24F !important;
+}
+
 @media (max-width: 1085px) {
   body {
     font-size: 1em;
@@ -629,11 +654,22 @@ input {
   .debito-automatico {
     max-height: 400px;
   }
-  .nosotros .section-img, .adopta .section-img {
+  .nosotros .section-img, .adopta .section-img, .voluntarios .section-img {
     display: none;
   }
-  .nosotros section, .adopta section {
+  .nosotros section, .adopta section, .voluntarios section {
     width: 100%;
+  }
+  .visitas .transporte-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .visitas .transporte-container .transporte {
+    width: 100%;
+    padding: 0px;
+    margin-top: 40px;
   }
 }
 

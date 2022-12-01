@@ -466,6 +466,30 @@ input {
     margin-top: 40px;
 }
 
+// ------------ VISITAS ------------// 
+.visitas h2, .visitas a {
+    color: $orange !important;
+}
+
+.visitas section {
+    width: 100%;
+}
+
+.visitas p, .visitas h2  {
+    margin-top: 20px;
+}
+
+.visitas .transporte {
+    width: 30%;
+    padding: 20px;
+}
+.visitas a {
+    font-weight: bold;
+}
+
+.visitas a:hover {
+    color:$light-orange !important;
+}
 
 //------ MEDIA QUERIES -----//
 
@@ -490,11 +514,19 @@ input {
     .debito-automatico {
         max-height: 400px;
     }
-    .nosotros .section-img, .adopta .section-img  {
+    .nosotros .section-img, .adopta .section-img, .voluntarios .section-img  {
         display: none;
     }
-    .nosotros section, .adopta section {
+    .nosotros section, .adopta section, .voluntarios section {
         width: 100%;
+    }
+    .visitas .transporte-container {
+        flex-direction: column;
+        .transporte {
+            width: 100%;
+            padding: 0px;
+            margin-top: 40px;
+        }
     }
   }
   
