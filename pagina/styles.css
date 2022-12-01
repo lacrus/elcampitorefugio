@@ -125,6 +125,10 @@ a {
   text-decoration: none;
 }
 
+.section-img {
+  text-align: end !important;
+}
+
 header {
   width: 100%;
   display: -webkit-box;
